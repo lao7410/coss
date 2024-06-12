@@ -1,0 +1,56 @@
+[
+    {
+        "img": "images/receta_mitad_1.jpg",
+        "title": "Receta 1",
+        "description": "Descripción de la receta 1",
+        "content": "Contenido completo de la receta 1 -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis libero eu turpis pretium, quis pulvinar neque laoreet"
+    },
+    {
+        "img": "images/receta_2.jpg",
+        "title": "Receta 2",
+        "description": "Descripción de la receta 2",
+        "content": "Contenido completo de la receta 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis libero eu turpis pretium, quis pulvinar neque laoreet"
+    },
+    {
+        "img": "images/receta_3.jpg",
+        "title": "Receta 3",
+        "description": "Descripción de la receta 3",
+        "content": "Contenido completo de la receta 3 -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis libero eu turpis pretium, quis pulvinar neque laoreet"
+    },
+    {
+        "img": "images/arriba_receta_2.jpg",
+        "title": "Receta 4",
+        "description": "Descripción de la receta 4",
+        "content": "Contenido completo de la receta 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing eli"
+    },
+    {
+        "img": "images/delicato jamon con fetas pag.jpg",
+        "title": "Receta 5",
+        "description": "Descripción de la receta 5",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing eliContenido completo de la receta 5"
+    },
+    {
+        "img": "images/jamogrande.png",
+        "title": "Receta 6",
+        "description": "Descripción de la receta 6",
+        "content": "Contenido Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elicompleto de la receta 6"
+    },
+    {
+        "img": "images/delicato jamon con fetas pag.jpg",
+        "title": "Receta 7",
+        "description": "Descripción de la receta 7",
+        "content": "ConteLorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elinido completo de la receta 7"
+    },
+    {
+        "img": "images/delicato jamon con fetas pag.jpg",
+        "title": "Receta 8",
+        "description": "Descripción de la receta 7",
+        "content": "ConteLorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elinido completo de la receta 7"
+    },
+    {
+        "img": "images/delicato jamon con fetas pag.jpg",
+        "title": "Receta 8",
+        "description": "Descripción de la receta 7",
+        "content": "ConteLorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elinido completo de la receta 7"
+    }
+]

@@ -1,0 +1,239 @@
+/* Estilos generales para el cuerpo y la tipografía */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el logo en la barra de navegación */
+.navbar-brand img {
+    height: 50px;
+}
+
+/* Estilos para el video del logo principal */
+.main-logo {
+    max-width: 1000px; /* Cambiar el valor según el tamaño deseado */
+    margin: 0 auto; /* Centrar el video horizontalmente */
+    padding: 10; /* Error: Falta la unidad de medida, debería ser padding: 10px; */
+}
+
+.main-logo video {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para el título de sección */
+.section-title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Estilos para imágenes dentro de secciones */
+.section-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para imágenes grandes */
+.large-image {
+    margin-bottom: 20px;
+}
+
+/* Estilos generales para filas de productos y recetas */
+.product-row, .recipe-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilos para cajas de productos y recetas */
+.product-box, .recipe-box {
+    flex: 0 0 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para imágenes dentro de cajas de productos y recetas */
+.product-box img, .recipe-box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 10px;
+}
+
+/* Asegurar que las imágenes de productos se muestren en filas de 3 */
+#productos .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilos adicionales para ajustar los productos */
+#productos .row.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+#productos .row.product-row > * {
+    flex: 0 0 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#productos .row.product-row > :nth-child(3n+1) {
+    margin-right: 20px;
+}
+
+#productos .row.product-row > :nth-child(3n+3) {
+    margin-left: 0;
+}
+
+/* Estilos para el formulario de contacto */
+#contacto {
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contactForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#contactForm button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para botones y pie de página */
+#loadMoreProducts, #loadMoreRecipes, #showLessProducts, #showLessRecipes {
+    display: block;
+    margin: 20px auto;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+footer h3 {
+    margin-top: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Estilos para el modal y su contenido */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px; /* Ancho máximo del modal */
+    height: auto; /* Altura automática para adaptarse al contenido */
+    overflow-y: auto; /* Scroll vertical si el contenido es más largo que la altura */
+    position: relative;
+}
+
+/* Cerrar el modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Imagen dentro del modal */
+.modal-content img {
+    width: 100%;
+    height: 300px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Ajustar la imagen al tamaño especificado */
+    object-position: center; /* Centrar la imagen */
+    margin-bottom: 20px; /* Espacio inferior entre imágenes */
+}
+
+/* Efecto de hover para agrandar levemente la imagen y atenuar el color */
+.recipe-box img {
+    transition: transform 0.8s ease, filter 0.8s ease; /* Transición suave de 0.3 segundos para transform y filter */
+}
+
+.recipe-box:hover img {
+    transform: scale(1.1); /* Escalar la imagen al 110% */
+    /* filter: grayscale(100%); */ /* Atenuar el color de la imagen al 50% */
+}
+
+/* Mostrar overlay en hover */
+.recipe-box:hover::before {
+    opacity: 1; /* Hacer el overlay visible */
+}
+/* Excluir el video del efecto de overlay */
+.recipe-box.video::before {
+    display: none;
+}
