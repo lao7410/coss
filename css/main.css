@@ -237,3 +237,96 @@ footer ul li a {
 .recipe-box.video::before {
     display: none;
 }
+
+/* Media queries para pantallas móviles */
+@media (max-width: 768px) {
+    /* Navbar en modo hamburguesa */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .menu {
+        display: none;
+    }
+
+    .navbar .hamburger {
+        display: block;
+    }
+
+    /* Ajustar productos a una columna */
+    .product-row {
+        display: block; /* Organiza las cajas en una columna */
+    }
+
+    .product-box {
+        flex: 0 0 100%; /* Ocupan el 100% del ancho disponible */
+        max-width: 100%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Ajustar tamaño de las imágenes de productos */
+    .product-box img {
+        width: 100%;
+        height: auto; /* Mantiene la proporción de la imagen */
+        }
+        
+        /* Ajustar tamaños de letras para productos */
+        .product-box h3 {
+            font-size: 1.2em; /* Tamaño de letra más pequeño para el título */
+        }
+    
+        .product-box p {
+            font-size: 1em; /* Tamaño de letra más pequeño para la descripción */
+        }
+        
+    /* Ajustar recetas a una columna con imágenes más pequeñas */
+    .recipe-box {
+        flex: 0 0 100%; /* Ocupan el 100% del ancho disponible */
+        max-width: 100%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Ajustar tamaño de las imágenes de recetas */
+    .recipe-box img {
+        width: 100%;
+        max-width: 200px; /* Tamaño máximo de la imagen */
+        height: auto; /* Mantiene la proporción de la imagen */
+        margin: 0 auto 10px; /* Centra la imagen horizontalmente y añade un margen inferior */
+    }
+
+
+    /* Ajustar tamaños de letras para recetas */
+    .recipe-box h3 {
+        font-size: 1.2em; /* Tamaño de letra más pequeño para el título */
+    }
+
+    .recipe-box p {
+        font-size: 1em; /* Tamaño de letra más pequeño para la descripción */
+    }
+
+    /* Botones para cargar más elementos */
+    #loadMoreProducts, #loadMoreRecipes {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    /* Botón para mostrar menos elementos */
+    #showLessProducts, #showLessRecipes {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 20px auto;
+    }
+}

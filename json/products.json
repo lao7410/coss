@@ -1,42 +1,22 @@
 [
     {
-        "name": "Producto 1",
-        "description": "Descripción del Producto 1.",
+        "name": "JAMÓN COCIDO",
+        "description": "Cocido en cocción lenta",
         "img": "images/jamon_cocido-producto1.jpg"
     },
     {
-        "name": "Producto 2",
-        "description": "Descripción del Producto 2.",
+        "name": "MORTADELA",
+        "description": "Mortadela con pistachos.",
         "img": "images/delicato_mortadela_producto2.jpg"
     },
     {
-        "name": "Producto 3",
-        "description": "Descripción del Producto 3sadsadasda.",
+        "name": "LOMO DE CERDO",
+        "description": "Tipo ibérico",
         "img": "images/Delicato_lom iberico_producto3.jpg"
     },
     {
-        "name": "Producto 4",
-        "description": "Descripción del Producto 4.",
+        "name": "LOMO DE CERDO",
+        "description": "Tipo ibérico",
         "img": "images/Delicato_lom iberico_producto3.jpg"
-    },
-    {
-        "name": "Producto 5",
-        "description": "Descripción del Producto 5.",
-        "img": "images/Delicato_lom iberico_producto3.jpg"
-    },
-    {
-        "name": "Producto 6",
-        "description": "Descripción del Producto 1.",
-        "img": "images/jamon_cocido-producto1.jpg"
-    },
-    {
-        "name": "Producto 7",
-        "description": "Descripción del Producto 1.",
-        "img": "images/jamon_cocido-producto1.jpg"
-    },
-    {
-        "name": "Producto 8",
-        "description": "Descripción del Producto 1.",
-        "img": "images/jamon_cocido-producto1.jpg"
     }
 ]
