@@ -1,56 +1,26 @@
 [
     {
         "img": "images/receta_mitad_1.jpg",
-        "title": "Receta 1",
-        "description": "Descripción de la receta 1",
-        "content": "Contenido completo de la receta 1 -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis libero eu turpis pretium, quis pulvinar neque laoreet"
+        "title": "Rollitos de Mortadela  rellenos de ricota y con pistachos",
+        "description": "Ingredientes: Mortadela Delicato(suficiente para cortar tiras de aproximadamente 3 cm de ancho) Ricota, un pote Queso crema, un pote Sal Pimienta Pistachos (suficiente para decorar)",
+        "content": "Preparación de la mezcla de ricota y queso crema: En un bowl, combinar la ricota y el queso crema en partes iguales. Asegurarse de mezclar bien para obtener una textura suave y homogénea. Añadir un toque de sal y pimienta a gusto. Si desean agregar hierbas frescas picadas como albahaca para darle más sabor. Preparación de los rollitos: Cortar la mortadela  en tiras de aproximadamente 3 cm de ancho. Tomar cada tira y colocar una porción de la mezcla de ricota y queso crema en un extremo. Enrollar con cuidado para formar pequeños rollitos rellenos. Repetir el proceso con el resto de las tiras de mortadela y  la mezcla de ricota con queso. Pelar y picar finamente los pistachos. Una vez que los rollitos de mortadela estén listos, decorar espolvoreando los pistachos picados por encima."
     },
     {
         "img": "images/receta_2.jpg",
-        "title": "Receta 2",
-        "description": "Descripción de la receta 2",
-        "content": "Contenido completo de la receta 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis libero eu turpis pretium, quis pulvinar neque laoreet"
+        "title": "Jamón glaseado con peras a la parrilla con roquefort y nueces",
+        "description": "Ingredientes: Jamón, Azúcar, Agua, Peras, Aceite de oliva, Roquefort, Nueces",
+        "content": "Preparar el caramelo mezclando agua y azúcar en una cacerola a fuego medio-alto hasta que el azúcar se disuelva por completo y la mezcla adquiera un color dorado. Retirar del fuego y reservar. Untar el caramelo en los bordes del jamón. Colocar el jamón en una bandeja y hornear a temperatura media hasta que esté ligeramente dorado y caramelizado. Mientras tanto, preparar las peras a la parrilla. Cortar las peras en rodajas y grillarlas en una sartén con un poco de aceite de oliva hasta que estén tiernas y ligeramente doradas. En un bowl, mezclar las peras grilladas con trozos de roquefort y nueces picadas. Servir el jamón glaseado junto con la mezcla de peras, roquefort y nueces como acompañamiento."
     },
     {
         "img": "images/receta_3.jpg",
-        "title": "Receta 3",
-        "description": "Descripción de la receta 3",
-        "content": "Contenido completo de la receta 3 -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis libero eu turpis pretium, quis pulvinar neque laoreet"
+        "title": "Ensalada",
+        "description": "Ingredientes: Lechuga francesa Lechuga morada Jamón Manzana Roquefort Nueces Vinagreta:Reducción de aceto balsamico, aceite de oliva, salsa de soja y miel",
+        "content": "Lavar y cortar las lechugas, la manzana en rodajas o cubos. Colocar las lechugas, manzana, roquefort y nueces en una ensaladera.Añadir de jamón Delicato Cottura Lenta y la vinagreta"
     },
     {
         "img": "images/arriba_receta_2.jpg",
-        "title": "Receta 4",
-        "description": "Descripción de la receta 4",
-        "content": "Contenido completo de la receta 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing eli"
-    },
-    {
-        "img": "images/delicato jamon con fetas pag.jpg",
-        "title": "Receta 5",
-        "description": "Descripción de la receta 5",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing eliContenido completo de la receta 5"
-    },
-    {
-        "img": "images/jamogrande.png",
-        "title": "Receta 6",
-        "description": "Descripción de la receta 6",
-        "content": "Contenido Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elicompleto de la receta 6"
-    },
-    {
-        "img": "images/delicato jamon con fetas pag.jpg",
-        "title": "Receta 7",
-        "description": "Descripción de la receta 7",
-        "content": "ConteLorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elinido completo de la receta 7"
-    },
-    {
-        "img": "images/delicato jamon con fetas pag.jpg",
-        "title": "Receta 8",
-        "description": "Descripción de la receta 7",
-        "content": "ConteLorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elinido completo de la receta 7"
-    },
-    {
-        "img": "images/delicato jamon con fetas pag.jpg",
-        "title": "Receta 8",
-        "description": "Descripción de la receta 7",
-        "content": "ConteLorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elinido completo de la receta 7"
+        "title": "Bruschetta de Mortadela Asada",
+        "description": "Ingredientes: Rodajas de pan de campo (cantidad a gusto) Aceite de oliva extra virgen Sal y pimienta al gusto Tomates cherry (aproximadamente 250 gramos) 2 dientes de ajo 1 burrata Mortadela Delicato (aproximadamente 100 gramos)",
+        "content": "Tostar rodajas de pan de campo en una sartén con un chorrito de aceite de oliva hasta que estén doradas y crujientes. En la misma sartén, saltear tomates cherry cortados por la mitad con ajo picado hasta que estén ligeramente caramelizados y el ajo esté fragante. En la misma sarten, dorar levemente las rodajas de mortadela. Colocar las rodajas de pan tostado en un plato grande o una tabla para servir.Distribuir la burrata en trozos sobre el pan, adicionar los tomates cherry salteados con ajo sobre la burrata. Al finalizar agregar láminas de mortadela  grillado encima de los tomates. Terminar con un chorrito de aceite de oliva extra virgen y una pizca de sal marina."
     }
-]
+    ]
