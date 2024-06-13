@@ -1,7 +1,8 @@
 /* Estilos generales para el cuerpo y la tipografía */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Francois One', sans-serif; /* Aplica la fuente Friz Quadrata a todo el cuerpo del documento */
 }
+
 
 /* Estilos para el logo en la barra de navegación */
 .navbar-brand img {
