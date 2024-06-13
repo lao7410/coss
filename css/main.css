@@ -5,7 +5,7 @@ body {
 
 /* Estilos para el logo en la barra de navegación */
 .navbar-brand img {
-    height: 50px;
+    height: 80px;
 }
 
 /* Estilos para el video del logo principal */
@@ -13,6 +13,7 @@ body {
     max-width: 1000px; /* Cambiar el valor según el tamaño deseado */
     margin: 0 auto; /* Centrar el video horizontalmente */
     padding: 10; /* Error: Falta la unidad de medida, debería ser padding: 10px; */
+    margin-bottom: none;
 }
 
 .main-logo video {
@@ -237,6 +238,12 @@ footer ul li a {
 .recipe-box.video::before {
     display: none;
 }
+.productsmargin {
+    margin-top: 150px;
+}
+.section-image {
+      margin-bottom: 1px; 
+    }
 
 /* Media queries para pantallas móviles */
 @media (max-width: 768px) {
