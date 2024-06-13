@@ -12,31 +12,40 @@ let productsLoaded = 0;
 let recipesLoaded = 0;
 
 function loadProducts() {
+    console.log('Cargando productos...');
     fetch('json/products.json')
         .then(response => response.json())
         .then(products => {
-            const productRow = document.querySelector('.product-row');
-            productRow.innerHTML = ''; // Clear previous content
-            products.slice(0, 3).forEach(product => {
-                const productBox = document.createElement('div');
-                productBox.classList.add('product-box');
-                productBox.innerHTML = `
-                    <img src="${product.img}" alt="${product.name}">
-                    <h3>${product.name}</h3>
-                    <p>${product.description}</p>
-                `;
-                productRow.appendChild(productBox);
-            });
-            productsLoaded = 3;
+            console.log('Productos cargados:', products);
+            const productRow = document.querySelector('#productRow');
+
+            if (productRow) {
+                productRow.innerHTML = ''; // Clear previous content
+                products.slice(0, 3).forEach(product => {
+                    const productBox = document.createElement('div');
+                    productBox.classList.add('product-box');
+                    productBox.innerHTML = `
+                        <img src="${product.img}" alt="${product.name}">
+                        <h3>${product.name}</h3>
+                        <p>${product.description}</p>
+                    `;
+                    productRow.appendChild(productBox);
+                });
+                productsLoaded = 3;
+            } else {
+                console.error('Error: Elemento productRow no encontrado.');
+            }
         })
         .catch(error => console.error('Error loading products:', error));
 }
+
 
 function loadMoreProducts() {
     fetch('json/products.json')
         .then(response => response.json())
         .then(products => {
-            const productRow = document.querySelector('.product-row');
+            const productRow = document.querySelector('#productRow');
+
             const additionalProducts = products.slice(productsLoaded, productsLoaded + 3);
             additionalProducts.forEach(product => {
                 const productBox = document.createElement('div');
@@ -58,7 +67,8 @@ function loadMoreProducts() {
 }
 
 function showLessProducts() {
-    const productRow = document.querySelector('.product-row');
+    const productRow = document.querySelector('#productRow');
+
     while (productRow.childElementCount > 3) {
         productRow.removeChild(productRow.lastChild);
     }
