@@ -159,28 +159,44 @@ body {
     margin-top: 100px;
 }
 
+/* Estilos para centrar el contenido del footer */
 footer {
-    background-color: #f8f9fa;
+    text-align: center;
     padding: 20px 0;
 }
 
-footer h3 {
-    margin-top: 0;
-}
-
+footer p,
 footer ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-footer ul li {
     margin-bottom: 10px;
 }
 
-footer ul li a {
-    text-decoration: none;
-    color: #000;
+footer ul li {
+    display: inline;
+    margin-right: 10px;
 }
+
+/* Estilos para los iconos */
+footer i {
+    margin-right: 5px;
+}
+
+
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #333; /* Color de los iconos */
+    font-size: 24px; /* Tamaño de los iconos */
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Cambiar color al pasar el mouse por encima */
+}
+
 
 /* Estilos para el modal y su contenido */
 .modal {
