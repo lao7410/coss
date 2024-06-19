@@ -221,21 +221,34 @@ footer .long-text a {
     text-align: center;
     max-width: 80%; /* Ajustar según sea necesario */
     bottom: 0; /* Colocar en la parte inferior */
-    left: 50; /* Colocar en la parte izquierda */
+    left: 80; /* Colocar en la parte izquierda */
 }
 
 
 @media (max-width: 768px) {
-    .custom-images img {
-        width: 90%; /* Las imágenes se apilan verticalmente en pantallas pequeñas */
+    .custom-images {
+        position: relative;
     }
-    
+
+    .custom-images img {
+        width: 90%;
+        display: block;
+        margin: 0 auto; /* Centrar las imágenes horizontalmente */
+    }
+
     .custom-text-overlay {
-        width: 100%; /* Ajustar el ancho del cuadro de texto en pantallas pequeñas */
-        display: flex;
+        position: absolute;
+        top: 50%; /* Alinear desde la mitad superior del contenedor */
+        left: 90%; /* Alinear desde la mitad izquierda del contenedor */
+        transform: translate(-50%, -50%); /* Centrar el cuadro de texto */
+        width: 90%;
         text-align: center;
+        padding: 10px 0;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, 0.7);
     }
 }
+
 
 
 
