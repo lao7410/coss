@@ -197,6 +197,7 @@ footer .long-text a {
 }
 
 
+/* formato imagenes pegadas*/
 .custom-image-container {
     position: relative;
     display: flex;
@@ -211,6 +212,7 @@ footer .long-text a {
 .custom-images img {
     width: 50%; /* Cada imagen toma la mitad del contenedor */
     height: auto;
+    margin: 10px 3px; /* Centrar las imágenes horizontalmente */
 }
 
 .custom-text-overlay {
@@ -225,29 +227,7 @@ footer .long-text a {
 }
 
 
-@media (max-width: 768px) {
-    .custom-images {
-        position: relative;
-    }
 
-    .custom-images img {
-        width: 90%;
-        display: block;
-        margin: 0 auto; /* Centrar las imágenes horizontalmente */
-    }
-
-    .custom-text-overlay {
-        position: absolute;
-        top: 50%; /* Alinear desde la mitad superior del contenedor */
-        left: 90%; /* Alinear desde la mitad izquierda del contenedor */
-        transform: translate(-50%, -50%); /* Centrar el cuadro de texto */
-        width: 90%;
-        text-align: center;
-        padding: 10px 0;
-        box-sizing: border-box;
-        background-color: rgba(255, 255, 255, 0.7);
-    }
-}
 
 
 
@@ -332,14 +312,37 @@ footer .long-text a {
     .product-row, .recipe-row {
         display: block; /* Organiza las cajas en una columna */
     }
-
+    
     .product-box, .recipe-box {
         flex: 0 0 100%; /* Ocupan el 100% del ancho disponible */
         max-width: 100%;
         margin-bottom: 20px;
         box-sizing: border-box;
-      /*   border: 1px solid #ddd; */
+        /*   border: 1px solid #ddd; */
         padding: 10px;
         text-align: center;
     }
+
+    .custom-images {
+        display: flex;
+        overflow-x: auto; /* Agrega un scroll horizontal en dispositivos móviles si es necesario */
+    }
+    
+    .custom-images img {
+        max-width: 100%; /* Ajustar el ancho máximo de las imágenes */
+        height: auto; /* Mantener la proporción de aspecto */
+        display: block;
+        margin: 0 auto; /* Centrar las imágenes horizontalmente */
+    }
+
+    .custom-text-overlay {
+        width: auto; /* Usar el 80% del ancho de la ventana */
+        padding: 3vw; /* Usar un padding del 2% del ancho de la ventana */
+        padding-bottom: 1px;
+    }
+
+    .custom-text-overlay p {
+        font-size: 2vw; /* Tamaño de letra del 2% del ancho de la ventana */
+    }
 }
+
