@@ -11,6 +11,43 @@ body {
 .navbar-brand img {
     height: 80px;
 }
+/* Estilos para la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Estilos para el botón de hamburguesa */
+#hamburger-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilos para el menú principal */
+.main-menu {
+    display: none;
+}
+
+/* Media query para pantallas más grandes */
+@media screen and (min-width: 768px) {
+    /* Ocultar el botón de hamburguesa en pantallas grandes */
+    .hamburger-menu {
+        display: none;
+    }
+
+    /* Mostrar el menú principal en pantallas grandes */
+    .main-menu {
+        display: block;
+    }
+}
+
 
 /* Estilos para el video del logo principal */
 .main-logo {
