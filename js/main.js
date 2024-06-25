@@ -2,11 +2,20 @@ document.addEventListener('DOMContentLoaded', function () {
     loadProducts();
     loadRecipes();
 
-    document.getElementById('loadMoreProducts').addEventListener('click', loadMoreProducts);
-    document.getElementById('showLessProducts').addEventListener('click', showLessProducts);
-    document.getElementById('loadMoreRecipes').addEventListener('click', loadMoreRecipes);
-    document.getElementById('showLessRecipes').addEventListener('click', showLessRecipes);
+    if(document.getElementById('loadMoreProducts')) {
+        document.getElementById('loadMoreProducts').addEventListener('click', loadMoreProducts);
+    }
+    if(document.getElementById('showLessProducts')) {
+        document.getElementById('showLessProducts').addEventListener('click', showLessProducts);
+    }
+    if(document.getElementById('loadMoreRecipes')) {
+        document.getElementById('loadMoreRecipes').addEventListener('click', loadMoreRecipes);
+    }
+    if(document.getElementById('showLessRecipes')) {
+        document.getElementById('showLessRecipes').addEventListener('click', showLessRecipes);
+    }
 });
+
 
 let productsLoaded = 0;
 let recipesLoaded = 0;
