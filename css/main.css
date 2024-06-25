@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 /* Estilos generales para el cuerpo y la tipografía */
 body {
     font-family: 'Francois One', sans-serif; /* Aplica la fuente Friz Quadrata a todo el cuerpo del documento */
 }
 
-
+.h4 {
+    font-size: small;
+}
 /* Estilos para el logo en la barra de navegación */
 .navbar-brand img {
     height: 80px;
@@ -38,6 +41,16 @@ body {
 .large-image {
     margin-bottom: 20px;
 }
+.recipes {
+    margin-top: 100px;
+}
+
+#recetas .row .recipe-box p.recipe-description {
+    font-family: 'Roboto', sans-serif; /* Cambia la fuente de los párrafos a Roboto */
+    font-weight: 400;/* Asegura que el texto no esté en negrita */
+    font-size: 16px ; /* Ajusta el tamaño de la fuente según tus necesidades */
+}
+
 
 /* Estilos generales para filas de productos y recetas */
 .product-row, .recipe-row {

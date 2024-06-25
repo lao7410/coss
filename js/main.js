@@ -12,13 +12,10 @@ let productsLoaded = 0;
 let recipesLoaded = 0;
 
 function loadProducts() {
-    console.log('Cargando productos...');
     fetch('json/products.json')
         .then(response => response.json())
         .then(products => {
-            console.log('Productos cargados:', products);
             const productRow = document.querySelector('#productRow');
-
             if (productRow) {
                 productRow.innerHTML = ''; // Clear previous content
                 products.slice(0, 3).forEach(product => {
@@ -27,7 +24,7 @@ function loadProducts() {
                     productBox.innerHTML = `
                         <img src="${product.img}" alt="${product.name}">
                         <h3>${product.name}</h3>
-                        <p>${product.description}</p>
+                        <p class="product-description">${product.description}</p>
                     `;
                     productRow.appendChild(productBox);
                 });
@@ -39,13 +36,11 @@ function loadProducts() {
         .catch(error => console.error('Error loading products:', error));
 }
 
-
 function loadMoreProducts() {
     fetch('json/products.json')
         .then(response => response.json())
         .then(products => {
             const productRow = document.querySelector('#productRow');
-
             const additionalProducts = products.slice(productsLoaded, productsLoaded + 3);
             additionalProducts.forEach(product => {
                 const productBox = document.createElement('div');
@@ -53,7 +48,7 @@ function loadMoreProducts() {
                 productBox.innerHTML = `
                     <img src="${product.img}" alt="${product.name}">
                     <h3>${product.name}</h3>
-                    <p>${product.description}</p>
+                    <p class="product-description">${product.description}</p>
                 `;
                 productRow.appendChild(productBox);
             });
@@ -68,7 +63,6 @@ function loadMoreProducts() {
 
 function showLessProducts() {
     const productRow = document.querySelector('#productRow');
-
     while (productRow.childElementCount > 3) {
         productRow.removeChild(productRow.lastChild);
     }
@@ -89,7 +83,7 @@ function loadRecipes() {
                 recipeBox.innerHTML = `
                     <img src="${recipe.img}" alt="${recipe.title}">
                     <h3>${recipe.title}</h3>
-                    <p>${recipe.description}</p>
+                    <p class="recipe-description">${recipe.description}</p>
                 `;
                 recipeBox.addEventListener('click', () => showRecipeContent(recipe));
                 recipeRow.appendChild(recipeBox);
@@ -111,7 +105,7 @@ function loadMoreRecipes() {
                 recipeBox.innerHTML = `
                     <img src="${recipe.img}" alt="${recipe.title}">
                     <h3>${recipe.title}</h3>
-                    <p>${recipe.description}</p>
+                    <p class="recipe-description">${recipe.description}</p>
                 `;
                 recipeBox.addEventListener('click', () => showRecipeContent(recipe));
                 recipeRow.appendChild(recipeBox);
@@ -136,7 +130,6 @@ function showLessRecipes() {
 }
 
 function showRecipeContent(recipe) {
-    // Crear el modal y su contenido
     var modal = document.createElement("div");
     modal.classList.add("modal");
 
@@ -154,7 +147,7 @@ function showRecipeContent(recipe) {
     recipeTitle.textContent = recipe.title;
 
     var recipeImage = document.createElement("img");
-    recipeImage.src = recipe.img; // Ruta de la imagen
+    recipeImage.src = recipe.img;
     recipeImage.alt = recipe.title;
 
     var recipeDescription = document.createElement("p");
@@ -163,7 +156,6 @@ function showRecipeContent(recipe) {
     var recipeContent = document.createElement("p");
     recipeContent.textContent = recipe.content;
 
-    // Agregar los elementos al modal
     modalContent.appendChild(closeBtn);
     modalContent.appendChild(recipeTitle);
     modalContent.appendChild(recipeImage);
@@ -171,15 +163,12 @@ function showRecipeContent(recipe) {
     modalContent.appendChild(recipeContent);
     modal.appendChild(modalContent);
 
-    // Mostrar el modal en la página
     document.body.appendChild(modal);
     modal.style.display = "block";
 
-    // Función para cerrar el modal al hacer clic fuera de él
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
         }
     }
 }
-
