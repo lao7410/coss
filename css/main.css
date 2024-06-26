@@ -276,13 +276,6 @@ footer .long-text a {
     left: 80; /* Colocar en la parte izquierda */
 }
 
-
-
-
-
-
-
-
 /* Estilos para el modal y su contenido */
 .modal {
     display: none;
@@ -296,7 +289,7 @@ footer .long-text a {
     background-color: rgba(0,0,0,0.9);
 }
 
-.modal-content {
+.modal-content  {
     background-color: #fefefe;
     margin: 10% auto;
     padding: 20px;
@@ -306,6 +299,10 @@ footer .long-text a {
     height: auto; /* Altura automática para adaptarse al contenido */
     overflow-y: auto; /* Scroll vertical si el contenido es más largo que la altura */
     position: relative;
+}
+
+.modal-content p {
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Cerrar el modal */
