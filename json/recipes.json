@@ -18,9 +18,40 @@
         "content": "Lavar y cortar las lechugas, la manzana en rodajas o cubos. Colocar las lechugas, manzana, roquefort y nueces en una ensaladera.Añadir de jamón Delicato Cottura Lenta y la vinagreta"
     },
     {
-        "img": "images/arriba_receta_2.jpg",
+        "img": "images/bruscheta_1.jpg",
         "title": "Bruschetta de mortadela asada",
         "description": "Ingredientes: Rodajas de pan de campo (cantidad a gusto) Aceite de oliva extra virgen Sal y pimienta al gusto Tomates cherry (aproximadamente 250 gramos) 2 dientes de ajo 1 burrata Mortadela Delicato (aproximadamente 100 gramos)",
         "content": "Tostar rodajas de pan de campo en una sartén con un chorrito de aceite de oliva hasta que estén doradas y crujientes. En la misma sartén, saltear tomates cherry cortados por la mitad con ajo picado hasta que estén ligeramente caramelizados y el ajo esté fragante. En la misma sarten, dorar levemente las rodajas de mortadela. Colocar las rodajas de pan tostado en un plato grande o una tabla para servir.Distribuir la burrata en trozos sobre el pan, adicionar los tomates cherry salteados con ajo sobre la burrata. Al finalizar agregar láminas de mortadela  grillado encima de los tomates. Terminar con un chorrito de aceite de oliva extra virgen y una pizca de sal marina."
+    },
+    {
+        "img": "images/rollitos_salad_1.jpg",
+        "title": "PROXIMAMENTE....",
+        "description": "",
+        "content": ""
+    },
+    {
+        "img": "images/peras_1.jpg",
+        "title": "PROXIMAMENTE....",
+        "description": "",
+        "content": ""
+    },
+    {
+        "img": "images/tomates_1.jpg",
+        "title": "PROXIMAMENTE....",
+        "description": "",
+        "content": ""
+    },
+    {
+        "img": "images/pizza_1.jpg",
+        "title": "PROXIMAMENTE....",
+        "description": "",
+        "content": ""
+    },
+    {
+        "img": "images/pizza_1.jpg",
+        "title": "PROXIMAMENTE....",
+        "description": "",
+        "content": ""
     }
+    
     ]
