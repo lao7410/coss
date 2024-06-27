@@ -1,3 +1,59 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const video = document.getElementById('video');
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const stopBtn = document.getElementById('stopBtn');
+    const volumeRange = document.getElementById('volumeRange');
+    let isPlaying = true; // Variable para controlar el estado de reproducción
+
+    // Inicializar el volumen del video en 0
+    video.volume = 0;
+    volumeRange.value = 0; // Establecer el valor del rango de volumen a 0
+
+    // Reproducir o pausar el video al hacer clic en el botón de reproducción/pausa
+    playPauseBtn.addEventListener('click', function() {
+        if (isPlaying) {
+            // Si está reproduciendo, pausar el video y cambiar a ícono de play
+            video.pause();
+            playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+        } else {
+            // Si está pausado, reproducir el video y cambiar a ícono de pausa
+            video.play();
+            playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+        }
+        // Cambiar el estado de reproducción
+        isPlaying = !isPlaying;
+    });
+
+    // Detener el video al hacer clic en el botón de detención
+    stopBtn.addEventListener('click', function() {
+        video.pause();
+        video.currentTime = 0;
+        playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+        isPlaying = false; // Establecer que el video está pausado
+    });
+
+    // Controlar el volumen del video con el rango de volumen
+    volumeRange.addEventListener('input', function() {
+        video.volume = volumeRange.value;
+    });
+
+    // Detener el video después de que se reproduzca una vez
+    video.addEventListener('ended', function() {
+        playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+        isPlaying = false; // Establecer que el video está pausado
+    });
+
+    // Inicializar el estado del botón cuando la página se carga
+    if (!video.paused) {
+        playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+        isPlaying = true;
+    } else {
+        playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+        isPlaying = false;
+    }
+});
+
+
 document.addEventListener('DOMContentLoaded', function () {
     loadProducts();
     loadRecipes();
@@ -197,3 +253,6 @@ function topFunction() {
     document.body.scrollTop = 0; // Para navegadores Safari
     document.documentElement.scrollTop = 0; // Para otros navegadores
 }
+
+
+
