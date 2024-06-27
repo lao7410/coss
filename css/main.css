@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /* Estilos generales para el cuerpo y la tipografía */
 body {
     font-family: 'Francois One', sans-serif; /* Aplica la fuente Friz Quadrata a todo el cuerpo del documento */
@@ -7,10 +8,12 @@ body {
 .h4 {
     font-size: small;
 }
+
 /* Estilos para el logo en la barra de navegación */
 .navbar-brand img {
     height: 80px;
 }
+
 /* Estilos para la barra de navegación */
 .navbar {
     display: flex;
@@ -18,7 +21,8 @@ body {
     align-items: center;
     background-color: #333;
     color: white;
-    padding: 10px 20px;
+    padding: 1%;
+    margin-bottom: -12px;
 }
 
 /* Estilos para el botón de hamburguesa */
@@ -48,19 +52,30 @@ body {
     }
 }
 
-
-/* Estilos para el video del logo principal */
-.main-logo {
-    max-width: 1000px; /* Cambiar el valor según el tamaño deseado */
-    margin: 0 auto; /* Centrar el video horizontalmente */
-    padding: 10px; /* Error: Falta la unidad de medida, debería ser padding: 10px; */
-    margin-bottom: none;
+/* Estilos para el contenedor principal del video */
+.container.main-logo {
+    width: 100vw; /* Ancho igual al 100% del viewport */
+    max-width: 100%; /* No exceder el ancho de la pantalla */
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar relleno */
+    margin-bottom: 2px;
 }
 
-.main-logo video {
-    width: 100%;
-    height: auto;
+.contenedorvideo {
+    width: 100%; /* Ancho igual al 100% del contenedor principal */
+    position: relative; /* Establecer posición relativa para el contenedor */
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 (9 dividido por 16, multiplicado por 100) */
+    overflow: hidden; /* Ocultar cualquier contenido que exceda la altura */
 }
+
+.logo {
+    position: absolute; /* Posición absoluta para el video dentro del contenedor */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ancho igual al 100% del contenedor de video */
+    height: 100%; /* Altura igual al 100% del contenedor de video */
+}
+
 
 /* Estilos para el título de sección */
 .section-title {
@@ -78,14 +93,39 @@ body {
 .large-image {
     margin-bottom: 20px;
 }
+
 .recipes {
     margin-top: 100px;
 }
 
+#recetas .row .recipe-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Alineación de texto central para todo el contenido */
+    padding: 20px;
+    
+    margin-bottom: 20px;
+}
+
+#recetas .row .recipe-box img {
+    width: 100%;
+    height: 250px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    object-position: center; /* Centra la imagen */
+    margin-bottom: 10px;
+}
+
+#recetas .row .recipe-box h3 {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
 #recetas .row .recipe-box p.recipe-description {
-    font-family: 'Roboto', sans-serif; /* Cambia la fuente de los párrafos a Roboto */
-    font-weight: 400;/* Asegura que el texto no esté en negrita */
-    font-size: 16px ; /* Ajusta el tamaño de la fuente según tus necesidades */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
 }
 
 
@@ -115,7 +155,6 @@ body {
     margin-bottom: 10px;
 }
 
-
 /* Estilos para imágenes dentro de cajas de recetas */
 .recipe-box img {
     width: 100%;
@@ -124,7 +163,6 @@ body {
     object-position: center;
     margin-bottom: 10px;
 }
-
 
 /* Asegurar que las imágenes de productos se muestren en filas de 3 */
 #productos .row {
@@ -246,8 +284,7 @@ footer .long-text a {
     margin: 0 auto;
 }
 
-
-/* formato imagenes pegadas*/
+/* formato imagenes pegadas */
 .custom-image-container {
     position: relative;
     display: flex;
@@ -289,7 +326,7 @@ footer .long-text a {
     background-color: rgba(0,0,0,0.9);
 }
 
-.modal-content  {
+.modal-content {
     background-color: #fefefe;
     margin: 10% auto;
     padding: 20px;
@@ -343,13 +380,17 @@ footer .long-text a {
 .recipe-box:hover::before {
     opacity: 1; /* Hacer el overlay visible */
 }
+
 /* Excluir el video del efecto de overlay */
 .recipe-box.video::before {
     display: none;
 }
+
 .productsmargin {
-    margin-top: 150px;
+    margin-top: 90px;
+    margin-bottom: 90px;
 }
+
 .section-image {
     margin-bottom: 1px; 
 }
@@ -359,7 +400,7 @@ footer .long-text a {
     .product-row, .recipe-row {
         display: block; /* Organiza las cajas en una columna */
     }
-    
+
     .product-box, .recipe-box {
         flex: 0 0 100%; /* Ocupan el 100% del ancho disponible */
         max-width: 100%;
@@ -374,7 +415,7 @@ footer .long-text a {
         display: flex;
         overflow-x: auto; /* Agrega un scroll horizontal en dispositivos móviles si es necesario */
     }
-    
+
     .custom-images img {
         max-width: 100%; /* Ajustar el ancho máximo de las imágenes */
         height: auto; /* Mantener la proporción de aspecto */
@@ -392,4 +433,3 @@ footer .long-text a {
         font-size: 2vw; /* Tamaño de letra del 2% del ancho de la ventana */
     }
 }
-

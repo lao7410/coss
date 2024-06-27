@@ -38,10 +38,12 @@
     </nav>
 
     <section class="container main-logo">
-        <video class="logo" controls>
-            <source src="images/video.mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de video.
-        </video>
+        <div class="contenedorvideo">
+            <video class="logo" controls autoplay>
+                <source src="images/video.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
     </section>
 
     <section class="container section-image large-image">
@@ -84,16 +86,7 @@
     <section class="container recipes" id="recetas">
         <h2>Recetas</h2>
         <div class="row">
-            <!--        <div class="recipe-box">
-                <img src="ruta/a/la/imagen1.jpg" alt="Receta 1">
-            </div>
-            <div class="recipe-box">
-                <img src="ruta/a/la/imagen2.jpg" alt="Receta 2">
-            </div>
-            <div class="recipe-box">
-                <img src="ruta/a/la/imagen3.jpg" alt="Receta 3">
-            </div> -->
-            <!-- Añade más cajas de recetas aquí -->
+            
         </div>
         <button id="loadMoreRecipes" class="btn btn-primary">Mostrar más</button>
         <button id="showLessRecipes" class="btn btn-secondary" style="display: none;">Ver menos recetas</button>
@@ -144,7 +137,7 @@
                                 www.riosma.com</a></li>
                     </ul>
                     <a href="http://www.riosma.com" target="_blank" class="footer-logo">
-                        <img src="/images/logo riosma.png" alt="Logo Riosma">
+                        <!-- <img src="/images/logo riosma.png" alt="Logo Riosma"> -->
                     </a>
                 </div>
             </div>
