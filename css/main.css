@@ -362,6 +362,10 @@ body {
 footer {
     text-align: center; /* Centrar el contenido del footer */
     margin-top: 50px;
+    
+        font-weight: normal; /* Elimina la negrita */
+        font-family: Arial, sans-serif; /* Ejemplo de una fuente más tranquila */
+    
 }
 
 footer ul {
