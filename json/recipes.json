@@ -25,26 +25,26 @@
     },
     {
         "img": "images/rollitos_salad_1.jpg",
-        "title": "PROXIMAMENTE....",
+        "title": "PRÓXIMAMENTE....",
         "description": "",
         "content": ""
     },
     {
         "img": "images/peras_1.jpg",
-        "title": "PROXIMAMENTE....",
+        "title": "PRÓXIMAMENTE....",
         "description": "",
         "content": ""
     },
     {
         "img": "images/tomates_1.jpg",
-        "title": "PROXIMAMENTE....",
+        "title": "PRÓXIMAMENTE....",
         "description": "",
         "content": ""
     },
     {
         "img": "images/pizza_1.jpg",
-        "title": "PROXIMAMENTE....",
-        "description": "",
-        "content": ""
+        "title": "PRÓXIMAMENTE....",
+        "description": "               ",
+        "content": "                "
     }
 ]
