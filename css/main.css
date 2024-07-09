@@ -514,6 +514,9 @@ footer .long-text a {
 
 .section-image {
     margin-bottom: 1px; 
+    max-width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
 }
 
 /* Ajustar productos a una columna en dispositivos móviles */
